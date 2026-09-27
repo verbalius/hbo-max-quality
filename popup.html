@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Max 4K Quality Enforcer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="panel">
+    <p class="eyebrow">MAX PLAYER</p>
+    <h1>Highest available quality</h1>
+    <label class="switch-row" for="enabled">
+      <span>
+        <strong>Enforce 4K / UHD</strong>
+        <small>Automatically choose the highest quality Max exposes.</small>
+      </span>
+      <input id="enabled" type="checkbox">
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+    <p id="status" class="status" role="status"></p>
+    <p class="note">Max still controls availability. A compatible title, plan, device, and connection are required for true 4K playback.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

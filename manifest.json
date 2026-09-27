@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Max 4K Quality Enforcer",
+  "version": "1.0.0",
+  "description": "Keeps Max's player on its highest available quality setting.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://max.com/*",
+    "*://*.max.com/*",
+    "*://hbomax.com/*",
+    "*://*.hbomax.com/*"
+  ],
+  "action": {
+    "default_title": "Max 4K Quality Enforcer",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://max.com/*",
+        "*://*.max.com/*",
+        "*://hbomax.com/*",
+        "*://*.hbomax.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
